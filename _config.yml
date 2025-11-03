@@ -1,6 +1,11 @@
-title: ASPIRE Lab
-description: Autonomous Systems, Perception, Intelligence, and Robotic Exploration
+title: "ASPIRE Lab"
+description: "Autonomous Systems, Perception, Intelligence, and Robotic Exploration"
 url: "https://aspirelabiith.github.io"
 baseurl: ""
-theme: jekyll-theme-cayman
 
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
