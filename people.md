@@ -7,7 +7,7 @@ permalink: /people/
 # Our Team
 
 **R Prasanth Kumar**  
-Principal Investigator 
+Principal Investigator  
 Professor, Department of Mechaincal & Aerospace Engineering  
 Affiliate Professor, Department of Artificial Intelligence
 
