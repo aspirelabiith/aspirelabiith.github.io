@@ -4,6 +4,8 @@ title: Positions
 permalink: /positions/
 ---
 
+{% include nav.html %}
+
 # Positions Available
 
 + Internships  

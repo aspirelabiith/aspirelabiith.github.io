@@ -4,6 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
+{% include nav.html %}
+
 # Recent Publications
 
 - Aashish Sahu and R Prasanth Kumar, "*Design and Development of an Arm-Leg Hybrid Drone for Enhanced Aerial Manipulation and Mobility*," 2024 IEEE International Conference on Robotics and Biomimetics (ROBIO), 2024.

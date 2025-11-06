@@ -3,6 +3,8 @@ title: Autonomous Systems, Perception, Intelligence, and Robotic Exploration Lab
 layout: default
 ---
 
+{% include nav.html %}
+
 # ASPIRE Lab
 Welcome to the lab website.
 

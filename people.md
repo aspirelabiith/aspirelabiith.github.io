@@ -4,6 +4,8 @@ title: People
 permalink: /people/
 ---
 
+{% include nav.html %}
+
 # Our Team
 
 **R Prasanth Kumar**  

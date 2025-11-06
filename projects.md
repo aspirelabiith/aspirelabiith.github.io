@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
+{% include nav.html %}
+
 # Current Projects
 
 + Design and Development of Autonomous Wheeled Humanoid Robot for Anubhava Mantapa  
