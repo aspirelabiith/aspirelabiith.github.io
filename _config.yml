@@ -1,11 +1,24 @@
-title: "ASPIRE Lab"
-description: "Autonomous Systems, Perception, Intelligence, and Robotic Exploration"
+title: ASPIRE Lab
+description: Autonomous Systems, Perception, Intelligence, and Robotic Exploration
 url: "https://aspirelabiith.github.io"
 baseurl: ""
 
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+theme: jekyll-theme-cayman
 
+# Navigation menu links (top-right)
+nav:
+  - title: "Home"
+    url: /
+  - title: "People"
+    url: /people
+  - title: "Publications"
+    url: /publications
+  - title: "Projects"
+    url: /projects
+  - title: "Positions"
+    url: /positions
+
+# Optional plugins (supported by GitHub Pages)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-include-cache
