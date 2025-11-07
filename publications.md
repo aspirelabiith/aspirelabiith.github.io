@@ -8,6 +8,8 @@ permalink: /publications/
 
 # Recent Publications
 
+- Krishnendu Roy and R Prasanth Kumar, "*Dynamic standing stability comparison of revolute-knee and prismatic-knee underactuated biped robots*," International Journal of Dynamics and Control, Vol. 13, art No. 415, 2025.  
+
 - Aashish Sahu and R Prasanth Kumar, "*Design and Development of an Arm-Leg Hybrid Drone for Enhanced Aerial Manipulation and Mobility*," 2024 IEEE International Conference on Robotics and Biomimetics (ROBIO), 2024.
 
 - Aashish Sahu and R Prasanth Kumar, "*Design and Implementation of Hexacopter Drone with Integrated Suction and Lift Mechanism with Real-Time Depth Sensing for Precision Object Handling*," 2024 9th International Conference on Robotics and Automation Engineering (ICRAE), 2024.
