@@ -8,6 +8,10 @@ permalink: /publications/
 
 # Recent Publications
 
+- N S Sridhar, Aashish Sahu, S Rami Reddy, and R Prasanth Kumar, "*Collaborative Payload Transport using a Four-Quadcopter Swarm with RTK and MQTT-based Coordination,*" IEEE International Conference on Robotics and Mechatronics, 2025.  
+
+- Krishnendu Roy and R Prasanth Kumar, "*Prismatic-Revolute Hybrid Biped Robot Walking in Unstructured Terrain using Reinforcement Learning,*" IEEE International Conference on Robotics and Mechatronics, 2025.  
+
 - Krishnendu Roy and R Prasanth Kumar, "*Dynamic standing stability comparison of revolute-knee and prismatic-knee underactuated biped robots*," International Journal of Dynamics and Control, Vol. 13, art No. 415, 2025. [Link](https://rdcu.be/eOR6x)  
 
 - Aashish Sahu and R Prasanth Kumar, "*Design and Development of an Arm-Leg Hybrid Drone for Enhanced Aerial Manipulation and Mobility*," 2024 IEEE International Conference on Robotics and Biomimetics (ROBIO), 2024.

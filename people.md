@@ -15,7 +15,7 @@ Head of the Lab
 Professor, Department of Mechaincal & Aerospace Engineering  
 Affiliate Professor, Department of Artificial Intelligence  
 Email: <span style='unicode-bidi:bidi-override; direction: rtl;'>
-ni.ca.htii ]ta[ ramukpr
+ni.ca.htii.eam [ta] ramukpr
 </span>
 
 
