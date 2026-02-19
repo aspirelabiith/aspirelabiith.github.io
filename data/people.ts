@@ -7,6 +7,8 @@ import RamiReddyImage from "@/public/people/Rami_Reddy.jpeg";
 import ChinniImage from "@/public/people/Chinnikrishna.jpeg";
 import SathwikImage from "@/public/people/Sathwik.jpeg";
 import SagarImage from "@/public/people/Vidya_Sagar.jpeg";
+import MukeshImage from "@/public/people/Mukesh.png";
+import UdayImage from "@/public/people/Uday.jpeg";
 
 import { Faculty, Student } from "../lib/types";
 
@@ -62,14 +64,14 @@ const mastersStudents: Student[] = [
     image: ChinniImage,
   },
   {
-    name: "Nikhil Banoth",
+    name: "Banoth Nikhil",
     program: "Artificial Intelligence",
     image: undefined,
   },
   {
     name: "Bestha Mukesh",
     program: "Robotics and Intelligent Systems",
-    image: undefined,
+    image: MukeshImage,
   },
   {
     name: "Muhammed Shanshad P K",
@@ -81,6 +83,11 @@ const mastersStudents: Student[] = [
     program: "Robotics and Intelligent Systems",
     image: SagarImage,
   },
+  {
+    name: "NCSS Uday L.",
+    program: "Smart Mobility",
+    image: UdayImage,
+  }
 ];
 
 const undergradStudents: Student[] = [
