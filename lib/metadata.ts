@@ -79,14 +79,14 @@ export const ROOT_METADATA: Metadata = {
     "mechanical engineering research",
   ],
   authors: [
-    { 
+    {
       name: `${SITE_CONFIG.name}`,
       url: SITE_CONFIG.baseUrl,
     },
     {
       name: `R Prasanth Kumar, ${SITE_CONFIG.institution}`,
       url: "https://www.iith.ac.in/~rpkumar",
-    }
+    },
   ],
   creator: `${SITE_CONFIG.name}, ${SITE_CONFIG.institution}`,
   publisher: SITE_CONFIG.institution,

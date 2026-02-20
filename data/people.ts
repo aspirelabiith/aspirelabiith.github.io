@@ -87,7 +87,7 @@ const mastersStudents: Student[] = [
     name: "NCSS Uday L.",
     program: "Smart Mobility",
     image: UdayImage,
-  }
+  },
 ];
 
 const undergradStudents: Student[] = [

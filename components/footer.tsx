@@ -39,9 +39,9 @@ export function Footer() {
               {SITE_CONFIG.fullName}
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm font-semibold max-w-xs mx-auto sm:mx-0">
-              <a 
-                href="https://www.iith.ac.in" 
-                target="_blank" 
+              <a
+                href="https://www.iith.ac.in"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
