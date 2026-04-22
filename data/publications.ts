@@ -25,13 +25,12 @@ const publications: Array<Publication> = [
   },
   {
     id: "hybrid-biped-rl-2025",
-    authors: "Krishnendu Roy and R Prasanth Kumar",
-    title:
-      "Prismatic-Revolute Hybrid Biped Robot Walking in Unstructured Terrain using Reinforcement Learning",
+    authors: "Krishnendu Roy and R. Prasanth Kumar",
+    title: "Prismatic–Revolute Hybrid Biped Robot Walking in Unstructured Terrain Using Reinforcement Learning",
     venue: "IEEE International Conference on Robotics and Mechatronics, 2025",
     award: "",
-    abstract: "Abstract—This paper presents a reinforcement learning (RL)framework for controlling a planar bipedal robot with ninedegrees of freedom (DOF), incorporating prismatic joints in boththe shank and thigh segments. The inclusion of prismatic kneeand thigh joints allows the robot to dynamically adjust its leglength during locomotion, significantly enhancing adaptabilityto uneven terrain and improving walking stability. The control architecture is implemented within a custom Gymnasiumenvironment, leveraging the MuJoCo physics engine for high-fidelity simulation of the robot’s dynamics, contact interactions,and frictional effects. The RL policy is trained using state-of-the-art algorithms, with observation inputs comprising jointpositions and velocities, ground reaction forces, and friction estimates. Simulation results demonstrate that the bipedal robot cansuccessfully navigate uneven terrain without falling throughoutthe evaluated episode length, while ensuring all joint torque commands remain within the specified actuator limits.",
-    link: "https://doi.org/10.1109/ICRM66809.2025.11349020",
+    abstract: "Abstract—This paper presents a reinforcement learning (RL) framework for controlling a planar bipedal robot with nine degrees of freedom (DOF), incorporating prismatic joints in both the shank and thigh segments. The inclusion of prismatic knee and thigh joints allows the robot to dynamically adjust its leg length during locomotion, significantly enhancing adaptability to uneven terrain and improving walking stability. The control architecture is implemented within a custom Gymnasium environment, leveraging the MuJoCo physics engine for high-fidelity simulation of the robot’s dynamics, contact interactions, and frictional effects. The RL policy is trained using state-of-the-art algorithms, with observation inputs comprising joint positions and velocities, ground reaction forces, and friction estimates. Simulation results demonstrate that the bipedal robot can successfully navigate uneven terrain without falling throughout the evaluated episode length, while ensuring all joint torque commands remain within the specified actuator limits.",
+    link: "https://doi.org/10.1109/ICRM66809.2025.11349020"
   },
   {
     id: "dynamic-standing-stability-2025",
