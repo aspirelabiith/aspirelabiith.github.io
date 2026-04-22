@@ -20,8 +20,8 @@ const publications: Array<Publication> = [
       "Collaborative Payload Transport using a Four-Quadcopter Swarm with RTK and MQTT-based Coordination",
     venue: "IEEE International Conference on Robotics and Mechatronics, 2025",
     award: "Best Paper Award",
-    abstract: "",
-    link: "#",
+    abstract: "This paper presents the design and experimental validation of a collaborative payload transport system using a swarm of four quadcopters in an outdoor environment. The system employs a leader–follower framework where the leader drone generates mission commands and trajectory setpoints, which are disseminated to follower drones using MQTT over a Wi-Fi mesh. High-precision positioning is enabled via a Real-Time Kinematic (RTK) GNSS system, with RTCM correction data routed through a cloud server and broadcasted within the swarm using telemetry radios. Each quadcopter is equipped with PX4 Autopilot and a Raspberry Pi Zero 2 W for mission control and inter-agent communication. The system successfully demonstrates stable transport of a 1 kg payload, maintaining formation during ascent, directional maneuvers, and descent. This work serves as a scalable platform for multi-agent cooperative aerial manipulation in GPS-available outdoor settings.",
+    link: "https://doi.org/10.1109/ICRM66809.2025.11349069",
   },
   {
     id: "hybrid-biped-rl-2025",
