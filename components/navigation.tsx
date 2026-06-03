@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Moon, Sun, Menu } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Logo } from "./logo";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +21,8 @@ export function Navigation() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   return (
     <header className="sticky top-0 z-50">
@@ -67,11 +69,12 @@ export function Navigation() {
                 className="h-9 w-9 shrink-0"
                 aria-label="Toggle theme"
               >
-                {theme === "dark" ? (
-                  <Sun className="h-5 w-5" />
-                ) : (
-                  <Moon className="h-5 w-5" />
-                )}
+                {mounted &&
+                  (theme === "dark" ? (
+                    <Sun className="h-5 w-5" />
+                  ) : (
+                    <Moon className="h-5 w-5" />
+                  ))}
               </Button>
             </div>
 
@@ -84,11 +87,12 @@ export function Navigation() {
                 className="h-8 w-8 shrink-0"
                 aria-label="Toggle theme"
               >
-                {theme === "dark" ? (
-                  <Sun className="h-4 w-4" />
-                ) : (
-                  <Moon className="h-4 w-4" />
-                )}
+                {mounted &&
+                  (theme === "dark" ? (
+                    <Sun className="h-4 w-4" />
+                  ) : (
+                    <Moon className="h-4 w-4" />
+                  ))}
               </Button>
 
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

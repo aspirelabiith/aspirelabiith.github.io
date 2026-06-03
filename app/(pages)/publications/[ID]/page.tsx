@@ -74,37 +74,50 @@ export default async function PublicationDetailPage({
         </Button>
       </Link>
 
-      <Card className="w-full text-center">
-        <CardHeader>
-          <div className="space-y-4">
-            <CardTitle className="text-2xl sm:text-3xl leading-relaxed">
+      <Card className="w-full">
+        <CardHeader className="text-center border-b pb-6">
+          <div className="space-y-3">
+            {publication.award && (
+              <div className="flex justify-center">
+                <Badge variant="default">{publication.award}</Badge>
+              </div>
+            )}
+            <CardTitle className="text-2xl sm:text-3xl leading-snug">
               {publication.title}
             </CardTitle>
             <CardDescription className="text-base">
               {publication.authors}
             </CardDescription>
-            <div className="flex flex-wrap gap-2 items-center justify-center">
-              <p className="text-sm text-muted-foreground">
-                {publication.venue}
-              </p>
-              {publication.award && (
-                <Badge variant="default">{publication.award}</Badge>
-              )}
-            </div>
+            <p className="text-sm text-muted-foreground">{publication.venue}</p>
+            {publication.doi && (
+              <a
+                href={`https://doi.org/${publication.doi}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-xs font-mono text-primary/70 hover:text-primary hover:underline underline-offset-2"
+              >
+                doi:{publication.doi}
+              </a>
+            )}
           </div>
         </CardHeader>
-        <CardContent className="space-y-6">
+        <CardContent className="pt-6 space-y-6">
           <div>
-            <h2 className="text-xl font-semibold mb-3">Abstract</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              {publication.abstract || "Abstract not available."}
+            <h2 className="text-base font-semibold uppercase tracking-wide text-muted-foreground mb-3">
+              Abstract
+            </h2>
+            <p className="text-foreground/80 leading-relaxed text-sm">
+              {(publication.abstract || "Abstract not available.").replace(
+                /^Abstract[—–-]\s*/i,
+                "",
+              )}
             </p>
           </div>
 
-          {publication.link && publication.link !== "#" && (
-            <div>
+          {publication.doi && (
+            <div className="pt-2 border-t">
               <a
-                href={publication.link}
+                href={`https://doi.org/${publication.doi}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

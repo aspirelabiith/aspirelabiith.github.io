@@ -42,31 +42,51 @@ export default function PublicationsPage() {
           </p>
         </div>
         <div className="space-y-3">
-          {publications.map((pub, idx) => (
-            <Link key={idx} href={`/publications/${pub.id}`}>
-              <Card className="cursor-pointer hover:shadow-lg transition-shadow mb-2">
-                <CardContent className="pt-6">
-                  <div>
+          {publications.map((pub, idx) => {
+            const year = pub.id.match(/(\d{4})$/)?.[1];
+            return (
+              <Card
+                key={idx}
+                className={`transition-shadow hover:shadow-lg${pub.award ? " border-l-4 border-l-primary" : ""}`}
+              >
+                <CardContent className="pt-5 pb-5">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    {year && (
+                      <span className="text-xs font-mono text-muted-foreground bg-muted px-1.5 py-0.5 rounded">
+                        {year}
+                      </span>
+                    )}
+                    <p className="text-sm text-muted-foreground">
+                      {pub.authors}
+                    </p>
                     {pub.award && (
-                      <Badge
-                        variant="default"
-                        className="my-2 flex gap-2 items-center"
-                      >
+                      <Badge variant="default" className="text-xs">
                         {pub.award}
                       </Badge>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    {pub.authors}
+                  <Link href={`/publications/${pub.id}`} className="group">
+                    <p className="font-semibold leading-snug mb-1.5 group-hover:underline underline-offset-2">
+                      <em>{pub.title}</em>
+                    </p>
+                  </Link>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    {pub.venue}
                   </p>
-                  <p className="font-medium mb-2">
-                    &ldquo;<em>{pub.title}</em>&rdquo;
-                  </p>
-                  <p className="text-sm text-muted-foreground">{pub.venue}</p>
+                  {pub.doi && (
+                    <a
+                      href={`https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-primary/70 hover:text-primary hover:underline underline-offset-2 font-mono"
+                    >
+                      doi:{pub.doi}
+                    </a>
+                  )}
                 </CardContent>
               </Card>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
 

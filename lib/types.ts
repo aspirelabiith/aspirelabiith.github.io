@@ -54,6 +54,6 @@ export type Publication = {
   title: string;
   venue: string;
   abstract: string;
-  link: string;
+  doi: string;
   award?: string;
 };
