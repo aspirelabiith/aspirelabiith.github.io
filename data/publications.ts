@@ -2,6 +2,55 @@ import { Publication } from "../lib/types";
 
 const publications: Array<Publication> = [
   {
+    id: "hybrid-drone-quadruped-deployment-2026",
+    authors: "Aashish Sahu, B. V. Harshavardhan, and R. Prasanth Kumar",
+    title:
+      "Autonomous aerial deployment of a hybrid drone-quadruped system for environmental tasks",
+    venue:
+      "Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science, 2026",
+    award: "",
+    abstract:
+      "This paper presents a novel aerial-ground robotic system that integrates a hexacopter UAV with a vibration-isolated quadruped robot for autonomous deployment, environmental interaction, and delivery of objects in unstructured terrains. We introduce a unique charpai-inspired spring-thread suspension platform. This passive system effectively attenuates aerial vibrations during flight, enabling stable in-flight transport of a 12-DOF quadruped. The robot employs a front-mounted, ant-inspired 2-DOF gripper and a ROS2-based control stack for vision-guided navigation and inertial stabilization. Unlike prior UAV-UGV platforms, our system enables active mid-air balancing, terrain-aware deployment, and autonomous object manipulation, validated in complex outdoor environments. Theoretical modeling and experimental validation reveal over 85% vibration isolation efficiency, with field trials confirming robust performance in complex outdoor environments. This work establishes a scalable and robust hybrid framework enabling autonomous monitoring, disaster response, and autonomous precision delivery in challenging terrains.",
+    doi: "10.1177/09544062261454017",
+  },
+  {
+    id: "multi-sensor-fusion-uav-gps-denied-2026",
+    authors:
+      "VVS Viswa Kiran, Akkala Sainath Reddy, H. Vishal Sri Sai, Himabindu Allaka, and R. Prasanth Kumar",
+    title:
+      "A Multi-Sensor Fusion Framework for Unmanned Aerial Vehicle (UAV) Navigation and Inspection in GPS-Denied and Degraded Environments",
+    venue:
+      "2026 IEEE Applied Sensing Conference (APSCON), Delhi, India, 23-25 February 2026",
+    award: "",
+    abstract:
+      "Reliable autonomous navigation of Unmanned Aerial Vehicles (UAVs) in GPS-denied environments remains a significant challenge due to signal attenuation, spoofing, and jamming. Indoor environments such as warehouses and industrial facilities suffer from GPS degradation caused by structural occlusions, while outdoor scenarios including forests and flat terrains lack reliable localization cues. To address these challenges, this paper presents a multi-sensor fusion framework for robust UAV navigation in GPS-compromised environments. The proposed approach employs a dual-strategy navigation framework: (i) Visual Simultaneous Localization and Mapping (VSLAM) with 3D point cloud generation for structured indoor environments, and (ii) a VSLAM-based 2D digital twin representation for outdoor environments, integrating visual data with inertial and altitude measurements. Software-in-the-loop (SIL) simulations using ROS and RTAB-Map validate autonomous navigation with obstacle avoidance in warehouse scenarios, while Hardware-in-the-loop (HIL) experiments on an in-house developed UAV platform demonstrate accurate indoor mapping and localization. The results demonstrate that the proposed vision-centric framework enables reliable navigation without dependence on GPS, offering a scalable and resilient solution for UAV operations in GPS-denied environments, with applications in inventory management, surveillance, and search-and-rescue missions.",
+    doi: "10.1109/apscon68325.2026.11497125",
+  },
+  {
+    id: "two-agent-aerial-throw-catch-2026",
+    authors: "Aashish Sahu and R. Prasanth Kumar",
+    title:
+      "Modeling and Control of a Two-Agent Aerial System for Dynamic Throw-and-Catch Maneuvers",
+    venue:
+      "2026 IEEE Applied Sensing Conference (APSCON), Delhi, India, 23-25 February 2026",
+    award: "",
+    abstract:
+      "Cooperative multi-agent aerial systems are transforming aerial logistics and manipulation by enabling drones to perform dynamic physical interactions. This paper presents the complete modeling and control of a two-quadcopter system executing a high-speed throw-and-catch maneuver. A high-fidelity MATLAB simulation couples a throwing unmanned Aerial Vehicle (UAV) that launches a ballistic payload with a catching UAV that autonomously intercepts it. The main challenge lies in achieving reliable interception of a fast, unpowered projectile under severe dynamic and latency constraints. Conventional reactive-pursuit controllers, which continuously track the projectile, were found to be unstable and computationally infeasible. To overcome these limitations, a lightweight Predictive Intercept Controller (PIC) is proposed, which computes a single fixed spatio-temporal intercept point using the projectile's ballistic model and commands a tuned Proportional–Derivative (PD) controller to reach it. Monte Carlo evaluations demonstrate a 93.3% interception success rate across randomized launch conditions, with mean spatial and temporal errors below 0.12 m and 40 ms, respectively. The results confirm that the proposed predictive–feedback framework is robust, repeatable, and suitable for real-time implementation on embedded UAV platforms.",
+    doi: "10.1109/apscon68325.2026.11496796",
+  },
+  {
+    id: "semantic-mapping-lidar-rgb-2026",
+    authors:
+      "Sarimella Rami Reddy, VVS Viswa Kiran, Siddapu Chinnikrishna Yadav, and R Prasanth Kumar",
+    title:
+      "Real-Time Semantic Mapping and Object-Oriented Autonomous Navigation with Low-Cost LiDAR and RGB Sensor",
+    venue: "2026 IEEE Applied Sensing Conference (APSCON), Delhi, India, 2026",
+    award: "",
+    abstract:
+      "This paper presents a framework for semantic mapping and autonomous navigation using low-cost LiDAR and RGB cameras. Our approach integrates real-time object detection from camera images with LiDAR-based mapping to generate a semantically enriched map, where detected objects are represented as landmarks with labels and images. The semantic map is then leveraged by the ROS2 Navigation2 (Nav2) stack to enable goal-directed autonomous navigation, allowing the robot to plan paths not only around obstacles but also toward specific objects of interest. The proposed method provides a low-cost, scalable, and practical solution for intelligent robot navigation in environments with visually identifiable objects.",
+    doi: "10.1109/apscon68325.2026.11497028",
+  },
+  {
     id: "obstacle-crossing-underactuated-biped-2026",
     authors: "Krishnendu Roy and R Prasanth Kumar",
     title:
@@ -18,10 +67,11 @@ const publications: Array<Publication> = [
       "N Shyam Sridhar, Aashish Sahu, S Rami Reddy, and R Prasanth Kumar",
     title:
       "Collaborative Payload Transport using a Four-Quadcopter Swarm with RTK and MQTT-based Coordination",
-    venue: "IEEE International Conference on Robotics and Mechatronics, 2025",
+    venue:
+      "2025 International Conference on Robotics and Mechatronics (ICRM), 2025",
     award: "Best Paper Award",
     abstract:
-      "This paper presents the design and experimental validation of a collaborative payload transport system using a swarm of four quadcopters in an outdoor environment. The system employs a leader–follower framework where the leader drone generates mission commands and trajectory setpoints, which are disseminated to follower drones using MQTT over a Wi-Fi mesh. High-precision positioning is enabled via a Real-Time Kinematic (RTK) GNSS system, with RTCM correction data routed through a cloud server and broadcasted within the swarm using telemetry radios. Each quadcopter is equipped with PX4 Autopilot and a Raspberry Pi Zero 2 W for mission control and inter-agent communication. The system successfully demonstrates stable transport of a 1 kg payload, maintaining formation during ascent, directional maneuvers, and descent. This work serves as a scalable platform for multi-agent cooperative aerial manipulation in GPS-available outdoor settings.",
+      "This paper presents the design and experimental validation of a collaborative payload transport system using a swarm of four quadcopters in an outdoor environment. The system employs a leader-follower framework where the leader drone generates mission commands and trajectory setpoints, which are disseminated to follower drones using MQTT over a Wi-Fi mesh. High-precision positioning is enabled via a Real-Time Kinematic (RTK) GNSS system, with RTCM correction data routed through a cloud server and broadcasted within the swarm using telemetry radios. Each quadcopter is equipped with PX4 Autopilot and a Raspberry Pi Zero 2 W for mission control and inter-agent communication. The system successfully demonstrates stable transport of a 1 kg payload, maintaining formation during ascent, directional maneuvers, and descent. This work serves as a scalable platform for multi-agent cooperative aerial manipulation in GPS-available outdoor settings.",
     doi: "10.1109/ICRM66809.2025.11349069",
   },
   {
@@ -29,7 +79,8 @@ const publications: Array<Publication> = [
     authors: "Krishnendu Roy and R. Prasanth Kumar",
     title:
       "Prismatic-Revolute Hybrid Biped Robot Walking in Unstructured Terrain Using Reinforcement Learning",
-    venue: "IEEE International Conference on Robotics and Mechatronics, 2025",
+    venue:
+      "2025 International Conference on Robotics and Mechatronics (ICRM), 2025",
     award: "",
     abstract:
       "Abstract—This paper presents a reinforcement learning (RL) framework for controlling a planar bipedal robot with nine degrees of freedom (DOF), incorporating prismatic joints in both the shank and thigh segments. The inclusion of prismatic knee and thigh joints allows the robot to dynamically adjust its leg length during locomotion, significantly enhancing adaptability to uneven terrain and improving walking stability. The control architecture is implemented within a custom Gymnasium environment, leveraging the MuJoCo physics engine for high-fidelity simulation of the robot’s dynamics, contact interactions, and frictional effects. The RL policy is trained using state-of-the-art algorithms, with observation inputs comprising joint positions and velocities, ground reaction forces, and friction estimates. Simulation results demonstrate that the bipedal robot can successfully navigate uneven terrain without falling throughout the evaluated episode length, while ensuring all joint torque commands remain within the specified actuator limits.",
@@ -44,8 +95,20 @@ const publications: Array<Publication> = [
       "International Journal of Dynamics and Control, Vol. 13, art No. 415, 2025",
     award: "",
     abstract:
-      "Prismatic-knee biped robots have recently been considered an alternative to revolute-knee biped robots. In this study, we investigate control and stabilization strategies for a three-link biped robot with point feet, actuated at the hip and knee joints, making it an underactuated system. Two architectural configurations are considered: (i) a model with a prismatic knee joint, and (ii) a model with a conventional revolute knee joint. The investigation aims to evaluate and compare how these two knee designs affect the robot’s ability to achieve dynamic stability, especially when subjected to diverse disturbances or non-equilibrium initial configurations. For both the biped robot variants, the work space of the hip joint is systematically sampled to generate a set of disparate initial conditions. These scenarios reflect practical situations where the robot may encounter substantial deviations from its standing equilibrium–such as after a push, slip, or terrain irregularity. The control policy is trained using the Soft Actor-Critic (SAC) algorithm in a custom Gymnasium environment built with the MuJoCo simulator using default frictional values. The observation space includes ground reaction forces, joint velocities, joint positions, inertia matrix, center of mass velocities.",
+      "Prismatic-knee biped robots have recently been considered an alternative to revolute-knee biped robots. In this study, we investigate control and stabilization strategies for a three-link biped robot with point feet, actuated at the hip and knee joints, making it an underactuated system. Two architectural configurations are considered: (i) a model with a prismatic knee joint, and (ii) a model with a conventional revolute knee joint. The investigation aims to evaluate and compare how these two knee designs affect the robot’s ability to achieve dynamic stability, especially when subjected to diverse disturbances or non-equilibrium initial configurations. For both the biped robot variants, the work space of the hip joint is systematically sampled to generate a set of disparate initial conditions. These scenarios reflect practical situations where the robot may encounter substantial deviations from its standing equilibrium-such as after a push, slip, or terrain irregularity. The control policy is trained using the Soft Actor-Critic (SAC) algorithm in a custom Gymnasium environment built with the MuJoCo simulator using default frictional values. The observation space includes ground reaction forces, joint velocities, joint positions, inertia matrix, center of mass velocities.",
     doi: "10.1007/s40435-025-01934-w",
+  },
+  {
+    id: "unicycle-rider-vibration-2025",
+    authors: "Sibivivek K. P., R. Prasanth Kumar, and Ashok Kumar Pandey",
+    title:
+      "Ride Comfort Analysis and Biodynamic Response of Unicycle Rider Under Whole Body Vibrations",
+    venue:
+      "ASME 2025 International Mechanical Engineering Congress and Exposition - India, V005T10A039, December 3, 2025",
+    award: "",
+    abstract:
+      "Personalized vehicles have gained significant popularity in urban environments due to their simplicity and convenience. Among these, unicycles are emerging as one of the preferred choice for short-distance travel. However, the unique dynamics of unicycles present challenges related to ride comfort and safety, particularly when they are exposed to vibrations from uneven road surfaces. Understanding the biodynamic responses of riders under such conditions is critical for optimizing the unicycle design and ensuring compliance with vibration exposure standards. This study investigates the biodynamic responses of a unicycle rider subjected to whole-body vibrations across various road surfaces. The human body is modelled as a lumped parameter system with 13 degrees of freedom (DOF), where the unicycle is modelled analogous to a quarter-car system. The equations of motion were derived using the Euler-Lagrange method, and the biodynamic responses were evaluated in accordance with the ISO 5982-2001 standard. Key metrics such as Foot-to-Head Transmissibility (FTHT), Driving Point Mechanical Impedance (DPMI), and Apparent Mass (AM) are derived and computed to evaluate the vibration behaviour of the system. In addition, the road surfaces were modelled following the ISO 8606 standard, and the effects were incorporated into the rider-system dynamics. The peak acceleration values for individual body segments were analyzed for different road conditions, highlighting the pelvis and thighs as the segments experiencing the highest vertical vibration transmission. In addition, the primary response of the system was observed at approximately 9-10 Hz, which can be attributed to the vibration modes of the thigh and pelvic pitches.",
+    doi: "10.1115/imece-india2025-159881",
   },
   {
     id: "arm-leg-hybrid-drone-2024",
@@ -95,17 +158,6 @@ const publications: Array<Publication> = [
     doi: "10.1109/INDISCON58499.2023.10270427",
   },
   {
-    id: "5r-quadruped-design-2022",
-    authors: "Mangesh D. Ratolikar and R. Prasanth Kumar",
-    title:
-      "Optimized Design of 5R Planar Parallel Mechanism for the Gait-Cycle of Quadruped Robots",
-    venue: "Journal of Vibroengineering, Vol. 24, No. 1, pp. 104-115, 2022",
-    award: "",
-    abstract:
-      "In quadruped robot locomotion using parallel mechanisms, researchers have used equal link lengths as legs for walking. However, force requirements are not the same in the forward and return strokes. An unsymmetrical parallel mechanism can be considered to accommodate such requirements. This work presents optimized dimensions of a 5R planar parallel mechanism (5R-PPM) with two degrees of freedom (DoF). Optimized dimensions are determined by formulating an optimization problem using kinematics and dynamics equations for the 5R-PPM. Genetic algorithm is considered to obtain solutions for the optimization problem formulated in this study. The constraint condition expressed here for optimization will attempt to minimize the peak torque essential to displace the links in the mechanism for the given height of the robot body and the path to be traced by the end-effector. After analysing all the four possible working modes for the same end-effector movement, the best working mode is selected for the quadruped legs. The equations are formulated and solved in MATLAB, and validated in the MATLAB Simscape Multibody toolbox.",
-    doi: "10.21595/jve.2021.22131",
-  },
-  {
     id: "biped-underactuated-gait-2022",
     authors: "Krishna Prakash Yadav and R. Prasanth Kumar",
     title:
@@ -118,12 +170,23 @@ const publications: Array<Publication> = [
     doi: "10.1007/s40435-021-00884-3",
   },
   {
+    id: "5r-quadruped-design-2021",
+    authors: "Mangesh D. Ratolikar and R. Prasanth Kumar",
+    title:
+      "Optimized design of 5R planar parallel mechanism aimed at gait-cycle of quadruped robots",
+    venue: "Journal of Vibroengineering, Vol. 24, No. 1, pp. 104-115, 2021",
+    award: "",
+    abstract:
+      "In quadruped robot locomotion using parallel mechanisms, researchers have used equal link lengths as legs for walking. However, force requirements are not the same in the forward and return strokes. An unsymmetrical parallel mechanism can be considered to accommodate such requirements. This work presents optimized dimensions of a 5R planar parallel mechanism (5R-PPM) with two degrees of freedom (DoF). Optimized dimensions are determined by formulating an optimization problem using kinematics and dynamics equations for the 5R-PPM. Genetic algorithm is considered to obtain solutions for the optimization problem formulated in this study. The constraint condition expressed here for optimization will attempt to minimize the peak torque essential to displace the links in the mechanism for the given height of the robot body and the path to be traced by the end-effector. After analysing all the four possible working modes for the same end-effector movement, the best working mode is selected for the quadruped legs. The equations are formulated and solved in MATLAB, and validated in the MATLAB Simscape Multibody toolbox.",
+    doi: "10.21595/jve.2021.22131",
+  },
+  {
     id: "discrete-feedback-control-2021",
     authors: "Krishna Prakash Yadav and R. Prasanth Kumar",
     title:
       "Discrete Feedback Control for Robust Walking of Biped Dynamic Walker",
     venue:
-      "Proceedings of the 9th International Conference on Control, Mechatronics and Automation (ICCMA), 2021",
+      "2021 9th International Conference on Control, Mechatronics and Automation (ICCMA), 2021",
     award: "",
     abstract:
       "This paper presents a robust biped dynamic walker based on the virtual slope, which introduces the driving force in the walking direction. Virtual passive dynamic walker as a reference model is used to develop the feedback controller based on the relation between the step length and the virtual slope of the walker. A numerical solution is prescribed to obtain the local and global stability of the biped dynamic walker. The Poincare map and the basin of attraction plots have been used for stability analysis. A fifth-order curve fitting polynomial function is used to set the relation between step length and slope. A proportional feedback controller is used to correct the error at the transition state.",
@@ -135,7 +198,7 @@ const publications: Array<Publication> = [
     title:
       "Swinging Up and Balancing a Pendulum on a Vertically Moving Cart Using Reinforcement Learning",
     venue:
-      "IEEE International Conference on Robotics and Biomimetics (ROBIO), 2021",
+      "2021 IEEE International Conference on Robotics and Biomimetics (ROBIO), 2021",
     award: "",
     abstract:
       "Underactuated systems occur frequently in robotics and legged locomotion. Unactuated pendulum on an actuated cart is a classic example used for designing and testing control algorithms for underactuated systems. While pendulum balancing on a horizontally moving cart is popular and environments available for reinforcement learning, pendulum on vertically moving cart is rarely discussed due to relatively higher difficulty level in balancing it. This paper presents a model environment for a pendulum on a vertically moving cart and trains a neural network controller using reinforcement learning to balance it in vertical position indefinitely without exceeding the displacement limits. Results presented for both con-tinuous and discrete force control input for the cart system show that the neural network controllers can successfully swing up and balance the pendulum.",
@@ -146,7 +209,8 @@ const publications: Array<Publication> = [
     authors: "Mangesh D. Ratolikar and R. Prasanth Kumar",
     title:
       "Neural network control of an inverted pendulum on a two DoF cart moving in the vertical plane",
-    venue: "Proceedings of IEEE ICRAE, 2021",
+    venue:
+      "2021 6th International Conference on Robotics and Automation Engineering (ICRAE), 2021",
     award: "",
     abstract:
       "Inverted pendulum control finds similarities with control of legged robots such as bipedal or humanoid robots where the trunk is balanced in an upright position. This paper proposes and presents a two degree of freedom cart that can move in the vertical plane while holding an underactuated pendulum. A neural network controller is trained using reinforcement learning to swing up and balance the pendulum by applying appropriate forces along horizontal and vertical directions. Simulation results show successful swinging up and balancing of the underactuated pendulum by applying horizontal and vertical forces on the cart while simultaneously keeping the cart within horizontal and vertical limits on displacements.",
@@ -189,7 +253,7 @@ const publications: Array<Publication> = [
     authors: "A. Sripada, V. Janardhan, and R. Prasanth Kumar",
     title: "Biped Robot Vertical Jumping with Control Constraints",
     venue:
-      "IEEE International Conference on Robotics and Biomimetics, pp. 1683-1687, 2018",
+      "2018 IEEE International Conference on Robotics and Biomimetics (ROBIO), pp. 1683-1687, 2018",
     award: "",
     abstract:
       "This paper proposes a multibody dynamics approach to achieve vertical jumping motion in biped robots. Joint trajectories were generated using control constraints that depend on the vertical distance traveled by the Center of Mass (CoM) of the biped. For the stance phase, constraints are introduced on the vertical motion of CoM and on the Zero Moment Point (ZMP). ZMP was considered to be at the ankle and the ankle torque was made zero, so that foot angular momentum could be ignored. Constraints in the flight phase are considered such that the CoM moves in a vertical direction. Dynamic analysis of the biped was performed for stance and flight phases and joint angles and velocities were computed. Thus acquired angles and velocities were supplied to a 3DOFsingie leg robot, which jumped vertically to a height of 4cm.",
@@ -212,7 +276,7 @@ const publications: Array<Publication> = [
     title:
       "Generating Feasible Solutions for Dynamically Crossing a Wide Ditch by a Biped Robot",
     venue:
-      "Journal of Intelligent and Robotic Systems, Vol. 88, No. 1, pp. 37-56, October 2017",
+      "Journal of Intelligent & Robotic Systems, Vol. 88, No. 1, pp. 37-56, October 2017",
     award: "",
     abstract:
       "The aim of this research work is to generate feasible motion for a biped robot to dynamically cross a wide ditch which is defined as a ditch with width more than or equal to the leg length. We propose an approach to obtain feasible solutions for dynamically crossing the wide ditch considering the dynamic balance of the biped robot, friction between the robot foot and ground, impact on the foot, limitations on the joint actuator torques and angular velocities. The biped robot is modeled as a seven link planar robot with the ditch crossing task consisting of two single support phases and a double support phase. An algorithm is developed to find the joint trajectories and the joint torques in each phase of ditch crossing by formulating the ditch crossing task as a constrained nonlinear optimization problem. In order to make the algorithm converge fast and to give feasible solutions, additional constraints called Adopted Constraints (ACs) are incorporated into the system of constraints. With time being one of the parameters, the developed algorithm adaptively adjusts the time for crossing a wide ditch. The significance of ground reaction force constraints in obtaining feasible solutions for crossing the wide ditch is shown through simulations. Feasible solutions obtained from simulation results provide not only the feasible joint angle trajectories, but also the joint torques required for the selection of actuators for a biped robot crossing the wide ditch.",
