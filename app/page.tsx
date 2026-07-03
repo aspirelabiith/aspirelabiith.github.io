@@ -181,9 +181,9 @@ export default function Home() {
         </Link>
       </section>
 
-      <h1 className="text-4xl font-bold text-center mt-8 mb-4 md:mt-16 md:mb-8">
+      <h2 className="text-4xl font-bold text-center mt-8 mb-4 md:mt-16 md:mb-8">
         About ASPIRE
-      </h1>
+      </h2>
 
       {/* Split Section - First para left, UAV Right */}
       <section className="grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-8 lg:gap-16 p-8 lg:p-16">
