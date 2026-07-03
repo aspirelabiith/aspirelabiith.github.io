@@ -9,7 +9,7 @@ export function StructuredData() {
     alternateName: SITE_CONFIG.fullName,
     url: SITE_CONFIG.baseUrl,
     logo: `${SITE_CONFIG.baseUrl}/logo.png`,
-    description: `${SITE_CONFIG.fullName} at ${SITE_CONFIG.institution}. Research in autonomous robotic systems, deep reinforcement learning, perception, and intelligent control. The lab is primarily associated with the Department of Mechanical and Aerospace Engineering and actively works with students from the Department of Artificial Intelligence.`,
+    description: `${SITE_CONFIG.fullName} at ${SITE_CONFIG.institution}. Research in autonomous robotic systems, deep reinforcement learning, perception, and intelligent control. The lab is primarily associated with the Department of Artificial Intelligence and actively works with students from the Department of Mechanical and Aerospace Engineering.`,
     parentOrganization: {
       "@type": "CollegeOrUniversity",
       "@id": "https://www.iith.ac.in#organization",
@@ -62,16 +62,16 @@ export function StructuredData() {
     affiliation: [
       {
         "@type": "Organization",
-        name: "Department of Mechanical and Aerospace Engineering",
-        url: "https://mae.iith.ac.in",
+        name: "Department of Artificial Intelligence",
+        url: "https://ai.iith.ac.in",
         parentOrganization: {
           "@id": "https://www.iith.ac.in#organization",
         },
       },
       {
         "@type": "Organization",
-        name: "Department of Artificial Intelligence",
-        url: "https://ai.iith.ac.in",
+        name: "Department of Mechanical and Aerospace Engineering",
+        url: "https://mae.iith.ac.in",
         parentOrganization: {
           "@id": "https://www.iith.ac.in#organization",
         },
@@ -105,8 +105,8 @@ export function StructuredData() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Mechanical & Aerospace Engineering",
-        item: "https://mae.iith.ac.in",
+        name: "Artificial Intelligence",
+        item: "https://ai.iith.ac.in",
       },
       {
         "@type": "ListItem",

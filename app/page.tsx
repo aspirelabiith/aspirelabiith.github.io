@@ -51,12 +51,12 @@ export default function Home() {
             </p>
             <p className="text-sm md:text-base font-medium text-muted-foreground leading-relaxed">
               <a
-                href="https://mae.iith.ac.in"
+                href="https://ai.iith.ac.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
               >
-                Department of Mechanical and Aerospace Engineering
+                Department of Artificial Intelligence
               </a>
               <br />
               <a

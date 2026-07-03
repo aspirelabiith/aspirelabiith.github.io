@@ -3,11 +3,11 @@ export const SITE_CONFIG = {
   fullName:
     "Autonomous Systems, Perception, Intelligence, Robotics, and Exploration",
   baseUrl: "https://aspirelabiith.github.io",
-  department: "Department of Mechanical and Aerospace Engineering",
+  department: "Department of Artificial Intelligence",
   institution: "IIT Hyderabad",
   address: {
     line1: "C-205, MAE Block",
-    line2: "Department of Mechanical & Aerospace Engineering",
+    line2: "Department of Artificial Intelligence",
     line3: "IIT Hyderabad",
     line4: "Kandi, Sangareddy, Telangana - 502284",
   },
@@ -28,8 +28,8 @@ export const SOCIAL_LINKS = [
     icon: "Home" as const,
   },
   {
-    name: "MAE Department",
-    url: "https://mae.iith.ac.in",
+    name: "AI Department",
+    url: "https://ai.iith.ac.in",
     icon: "GraduationCap" as const,
   },
   {

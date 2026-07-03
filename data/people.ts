@@ -17,8 +17,8 @@ const faculty: Faculty[] = [
     name: "R Prasanth Kumar",
     role: "Head of the Lab",
     positions: [
-      "Professor, Department of Mechaincal & Aerospace Engineering",
-      "Affiliate Professor, Department of Artificial Intelligence",
+      "Professor, Department of Artificial Intelligence",
+      "Affiliate Professor, Department of Mechanical & Aerospace Engineering",
     ],
     email: "ni.ca.htii.eam [ta] ramukpr",
     web: "https://www.iith.ac.in/~rpkumar",
