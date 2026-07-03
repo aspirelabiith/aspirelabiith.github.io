@@ -22,6 +22,7 @@ export function Navigation() {
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  // eslint-disable-next-line react-hooks/set-state-in-effect -- standard hydration-mount detection
   useEffect(() => setMounted(true), []);
 
   return (
