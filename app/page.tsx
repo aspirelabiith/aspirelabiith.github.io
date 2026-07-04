@@ -2,7 +2,6 @@ import { createMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import UAVImage from "@/public/uav.jpg";
 import HumanoidImage from "@/public/humanoid.png";
-// import CBlockImage from "@/public/cblock.png";
 import { Logo } from "@/components/logo";
 import { newsItems } from "@/data/news";
 import Link from "next/link";
@@ -246,26 +245,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Upcoming Gallery Section */}
-      {/* <section className="p-8 lg:p-16">
-        <div className="text-center space-y-6 max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold">Upcoming</h2>
-          <p className="text-xl text-muted-foreground">
-            Stay tuned for exciting updates from ASPIRE Lab
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="aspect-square rounded-3xl border-2 border-dashed border-border/50 bg-muted/20 flex items-center justify-center hover:border-primary/50 transition-all"
-              >
-                <p className="text-muted-foreground text-sm">Coming Soon</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }

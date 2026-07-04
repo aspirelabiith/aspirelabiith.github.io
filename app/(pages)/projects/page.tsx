@@ -69,9 +69,9 @@ export default function ProjectsPage() {
 
       <div className="space-y-4 sm:space-y-6">
         <div className="space-y-1 sm:space-y-2">
-          <h1 className="text-2xl sm:text-3xl font-bold">
+          <h2 className="text-2xl sm:text-3xl font-bold">
             Recently Completed Projects
-          </h1>
+          </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
             Successfully delivered research projects
           </p>

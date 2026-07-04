@@ -35,9 +35,9 @@ export function Navigation() {
                 <Logo />
               </div>
               <div className="min-w-0">
-                <h1 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                <p className="text-lg sm:text-xl md:text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors truncate">
                   {SITE_CONFIG.name}
-                </h1>
+                </p>
                 <p className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block line-clamp-1">
                   {SITE_CONFIG.fullName}
                 </p>
@@ -107,7 +107,7 @@ export function Navigation() {
                     <Menu className="h-4 w-4" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[280px] sm:w-[320px]">
+                <SheetContent side="right" className="w-70 sm:w-[320px]">
                   <SheetHeader>
                     <SheetTitle className="text-left hidden">Menu</SheetTitle>
                     <SheetDescription className="text-left hidden">

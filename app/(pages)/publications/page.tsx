@@ -94,7 +94,7 @@ export default function PublicationsPage() {
 
       <div className="space-y-4">
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold">Patents</h1>
+          <h2 className="text-3xl font-bold">Patents</h2>
           <p className="text-muted-foreground">Filed and granted patents</p>
         </div>
         <div className="grid md:grid-cols-2 gap-4">

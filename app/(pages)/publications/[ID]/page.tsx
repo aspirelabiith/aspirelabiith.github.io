@@ -7,7 +7,6 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -82,9 +81,9 @@ export default async function PublicationDetailPage({
                 <Badge variant="default">{publication.award}</Badge>
               </div>
             )}
-            <CardTitle className="text-2xl sm:text-3xl leading-snug">
+            <h1 className="text-2xl sm:text-3xl font-semibold leading-snug">
               {publication.title}
-            </CardTitle>
+            </h1>
             <CardDescription className="text-base">
               {publication.authors}
             </CardDescription>
