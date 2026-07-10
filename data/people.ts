@@ -20,7 +20,7 @@ const faculty: Faculty[] = [
       "Professor, Department of Artificial Intelligence",
       "Affiliate Professor, Department of Mechanical & Aerospace Engineering",
     ],
-    email: "ni.ca.htii.eam [ta] ramukpr",
+    email: "ni.ca.htii.ia [ta] ramukpr",
     web: "https://www.iith.ac.in/~rpkumar",
     image: RPKumarImage,
   },
