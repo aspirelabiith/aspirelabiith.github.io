@@ -2,6 +2,18 @@ import { Publication } from "../lib/types";
 
 const publications: Array<Publication> = [
   {
+    id: "go-pcm-thermal-management-bldc-2026",
+    authors: "Aashish Sahu, R. Prasanth Kumar, and Lalhmingsanga Hauchhum",
+    title:
+      "Experimental validation of GO-PCM thermal management for inner-rotor BLDC motors",
+    venue:
+      "Proceedings of the Institution of Mechanical Engineers, Part A: Journal of Power and Energy, 2026",
+    award: "",
+    abstract:
+      "Inner-rotor brushless DC (BLDC) motors used in electric mobility, UAV propulsion, and robotics face elevated thermal stress because compact packaging restricts convective area and limits the practicality of active cooling. This work experimentally evaluates a fully passive, stator-coupled latent-heat module using paraffin phase-change material (PCM) nano-enhanced with graphene oxide (GO) to improve conduction-limited access to latent enthalpy during load transients. A 5 wt% GO loading was selected as a conductivity-enthalpy compromise, and transient hot-wire measurements confirm a ~62% increase in effective thermal conductivity (from ≈0.25 to ≈0.40 W m−1 K−1) relative to neat paraffin. The GO-PCM is encapsulated in a CNC-machined aluminum enclosure sized to inner-rotor clearance and sealed via a press-fit closure with ullage to accommodate volumetric expansion and prevent leakage over melt/solidify cycling. Motor-level tests on a motor–generator rig under no-load, partial-load (~180 W), and full-load (~360 W) show that, at high load, the module reduces peak winding temperature rise by up to 24.4°C, extends the time to reach 80% of the baseline steady-state rise by ≈58%, and halves the terminal normalized rise (θ ≈ 0.5). The results provide quantitative guidance for packaging-limited BLDC drives where airflow and large fin arrays offer limited benefit.",
+    doi: "10.1177/09576509261464090",
+  },
+  {
     id: "hybrid-drone-quadruped-deployment-2026",
     authors: "Aashish Sahu, B. V. Harshavardhan, and R. Prasanth Kumar",
     title:
