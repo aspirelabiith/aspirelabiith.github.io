@@ -31,6 +31,14 @@ export type Student = {
   image?: StaticImageData;
 };
 
+export type Alumnus = {
+  name: string;
+  degree: string;
+  program?: string;
+  graduationYear?: number;
+  image?: StaticImageData;
+};
+
 export type Position = {
   title: string;
   status: "open" | "closed";

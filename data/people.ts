@@ -10,7 +10,7 @@ import SagarImage from "@/public/people/Vidya_Sagar.jpeg";
 import MukeshImage from "@/public/people/Mukesh.png";
 import UdayImage from "@/public/people/Uday.jpeg";
 
-import { Faculty, Student } from "../lib/types";
+import { Faculty, Student, Alumnus } from "../lib/types";
 
 const faculty: Faculty[] = [
   {
@@ -27,7 +27,6 @@ const faculty: Faculty[] = [
 ];
 
 const phdStudents: Student[] = [
-  { name: "Krishnendu Roy", image: undefined },
   { name: "Aashish Sahu", image: AshishSahuImage },
   { name: "B V Shiva Reddy", image: undefined },
 ];
@@ -37,21 +36,6 @@ const mastersStudents: Student[] = [
     name: "S Rami Reddy",
     program: "Mechanics and Design",
     image: RamiReddyImage,
-  },
-  {
-    name: "B Vijaya Sathwik",
-    program: "Mechanics and Design",
-    image: SathwikImage,
-  },
-  {
-    name: "Saurabh Shukla",
-    program: "Mechanics and Design",
-    image: SaurabhImage,
-  },
-  {
-    name: "VVS Viswa Kiran",
-    program: "Artificial Intelligence",
-    image: ViswaKiranImage,
   },
   {
     name: "Arkaprabha Sinha Roy",
@@ -74,7 +58,7 @@ const mastersStudents: Student[] = [
     image: MukeshImage,
   },
   {
-    name: "Muhammed Shanshad P K",
+    name: "Md Shanshad P K",
     program: "Robotics and Intelligent Systems",
     image: undefined,
   },
@@ -90,8 +74,43 @@ const mastersStudents: Student[] = [
   },
 ];
 
-const undergradStudents: Student[] = [
-  { name: "Shriram Hari", program: "Mechanical Engineering", image: undefined },
+const undergradStudents: Student[] = [];
+
+const alumni: Alumnus[] = [
+  {
+    name: "Krishnendu Roy",
+    degree: "PhD",
+    graduationYear: 2026,
+    image: undefined,
+  },
+  {
+    name: "Shriram Hari",
+    degree: "BTech",
+    program: "Mechanical Engineering",
+    graduationYear: 2026,
+    image: undefined,
+  },
+  {
+    name: "B Vijaya Sathwik",
+    degree: "MTech",
+    program: "Mechanics and Design",
+    graduationYear: 2026,
+    image: SathwikImage,
+  },
+  {
+    name: "Saurabh Shukla",
+    degree: "MTech",
+    program: "Mechanics and Design",
+    graduationYear: 2026,
+    image: SaurabhImage,
+  },
+  {
+    name: "VVS Viswa Kiran",
+    degree: "MTech",
+    program: "Artificial Intelligence",
+    graduationYear: 2026,
+    image: ViswaKiranImage,
+  },
 ];
 
-export { faculty, phdStudents, mastersStudents, undergradStudents };
+export { faculty, phdStudents, mastersStudents, undergradStudents, alumni };

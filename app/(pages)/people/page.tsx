@@ -8,6 +8,12 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Mail, Globe } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
@@ -17,8 +23,9 @@ import {
   phdStudents,
   mastersStudents,
   undergradStudents,
+  alumni,
 } from "@/data/people";
-import { Student } from "@/lib/types";
+import { Student, Alumnus } from "@/lib/types";
 
 export const metadata = createMetadata({
   title: "Research Team - ASPIRE Lab IIT Hyderabad",
@@ -90,7 +97,7 @@ function StudentCard({ student, badge, description }: StudentCardProps) {
       <CardHeader className="space-y-2 text-center">
         <CardTitle className="text-base sm:text-lg">{student.name}</CardTitle>
         {description ? (
-          <CardDescription className="text-xs sm:text-sm">
+          <CardDescription className="text-xs sm:text-sm whitespace-pre-line">
             {description}
           </CardDescription>
         ) : (
@@ -226,23 +233,62 @@ export default function PeoplePage() {
         </div>
       </div>
 
-      <Separator className="my-6 sm:my-8" />
+      {undergradStudents.length > 0 && (
+        <>
+          <Separator className="my-6 sm:my-8" />
 
-      <div className="space-y-4 sm:space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold">
-          Undergraduate Research Students
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-          {undergradStudents.map((student) => (
-            <StudentCard
-              key={student.name}
-              student={student}
-              badge=""
-              description={`BTech (${student.program})`}
-            />
-          ))}
-        </div>
-      </div>
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-xl sm:text-2xl font-semibold">
+              Undergraduate Research Students
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+              {undergradStudents.map((student) => (
+                <StudentCard
+                  key={student.name}
+                  student={student}
+                  badge=""
+                  description={`BTech (${student.program})`}
+                />
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+
+      {alumni.length > 0 && (
+        <>
+          <Separator className="my-6 sm:my-8" />
+
+          <Accordion type="single" collapsible>
+            <AccordionItem value="past-members" className="border-b-0">
+              <AccordionTrigger className="text-xl sm:text-2xl font-semibold py-0 hover:no-underline">
+                Past Members
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 pt-4 sm:pt-6">
+                  {alumni.map((alumnus: Alumnus) => (
+                    <StudentCard
+                      key={alumnus.name}
+                      student={alumnus}
+                      badge=""
+                      description={[
+                        alumnus.program
+                          ? `${alumnus.degree} (${alumnus.program})`
+                          : alumnus.degree,
+                        alumnus.graduationYear
+                          ? `Graduated ${alumnus.graduationYear}`
+                          : undefined,
+                      ]
+                        .filter(Boolean)
+                        .join("\n")}
+                    />
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </>
+      )}
     </div>
   );
 }
