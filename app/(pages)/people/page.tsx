@@ -227,7 +227,12 @@ export default function PeoplePage() {
               key={student.name}
               student={student}
               badge=""
-              description={`MTech (${student.program})`}
+              description={[
+                `MTech (${student.program})`,
+                student.joined ? `Joined ${student.joined}` : undefined,
+              ]
+                .filter(Boolean)
+                .join("\n")}
             />
           ))}
         </div>

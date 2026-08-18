@@ -29,6 +29,7 @@ export type Student = {
   name: string;
   program?: string;
   image?: StaticImageData;
+  joined?: string;
 };
 
 export type Alumnus = {

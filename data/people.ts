@@ -8,7 +8,7 @@ import ChinniImage from "@/public/people/Chinnikrishna.jpeg";
 import SathwikImage from "@/public/people/Sathwik.jpeg";
 import SagarImage from "@/public/people/Vidya_Sagar.jpeg";
 import MukeshImage from "@/public/people/Mukesh.png";
-import UdayImage from "@/public/people/Uday.jpeg";
+import UdayImage from "@/public/people/Uday.png";
 
 import { Faculty, Student, Alumnus } from "../lib/types";
 
@@ -36,41 +36,73 @@ const mastersStudents: Student[] = [
     name: "S Rami Reddy",
     program: "Mechanics and Design",
     image: RamiReddyImage,
+    joined: "2024",
   },
   {
     name: "Arkaprabha Sinha Roy",
     program: "Artificial Intelligence",
     image: ArkaImage,
+    joined: "2025",
   },
   {
     name: "S Chinnikrishna Yadav",
-    program: "Robotics and Intelligent Systems",
+    program: "Robotics",
     image: ChinniImage,
+    joined: "2025",
   },
   {
     name: "Banoth Nikhil",
     program: "Artificial Intelligence",
     image: undefined,
+    joined: "2026",
   },
   {
     name: "Bestha Mukesh",
-    program: "Robotics and Intelligent Systems",
+    program: "Robotics",
     image: MukeshImage,
+    joined: "2026",
   },
   {
     name: "Md Shanshad P K",
-    program: "Robotics and Intelligent Systems",
+    program: "Robotics",
     image: undefined,
+    joined: "2026",
   },
   {
     name: "Vidya Sagar Tirandas",
-    program: "Robotics and Intelligent Systems",
+    program: "Robotics",
     image: SagarImage,
+    joined: "2026",
   },
   {
     name: "NCSS Uday L.",
     program: "Smart Mobility",
     image: UdayImage,
+    joined: "2026",
+  },
+  {
+    name: "Rayadu Vijay Setti",
+    program: "Robotics",
+    image: undefined,
+    joined: "2024",
+  },
+  {
+    name: "Sidharth D",
+    program: "Artificial Intelligence",
+    image: undefined,
+    joined: "2025",
+  },
+  {
+    name: "Krinsh Dhedhi",
+    program: "Artificial Intelligence",
+    image: undefined,
+    joined: "2025",
+  },
+  {
+    name: "Guruvignesh R M",
+    program: "Additive Manufacturing",
+    image: undefined,
+    joined: "2026",
   },
 ];
 
