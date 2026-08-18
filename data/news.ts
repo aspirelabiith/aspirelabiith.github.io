@@ -2,6 +2,14 @@ import { NewsItem } from "../lib/types";
 
 const newsItems: NewsItem[] = [
   {
+    id: "6",
+    title: "Junior Project Assistant Position Open",
+    date: "2026-08-17",
+    description:
+      "ASPIRE Lab is hiring a Junior Project Assistant to work on robotics research. BTech in Mechanical, Mechatronics, Robotics, Electrical, or ECE required. Applications close 31st August 2026.",
+    link: "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-Junior-Project-Assistant.pdf",
+  },
+  {
     id: "1",
     title: "Internship Opportunities Open",
     date: "2025-12-01",

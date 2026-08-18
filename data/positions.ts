@@ -9,9 +9,11 @@ const positions: Position[] = [
   },
   {
     title: "Project Assistant",
-    status: "closed",
+    status: "open",
     description:
-      "No positions are available immediately. We will post here soon.",
+      "We are hiring a Junior Project Assistant (Rs 18,200/month consolidated) to work on robotics research. Requires a BTech in Mechanical, Mechatronics, Robotics, Electrical, or Electronics & Communications Engineering with relevant experience. Applications close 31st August 2026. See full details in the",
+    link: "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-Junior-Project-Assistant.pdf",
+    linkText: "advertisement (PDF)",
   },
   {
     title: "PhD/Research Scholar",
