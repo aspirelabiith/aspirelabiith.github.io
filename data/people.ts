@@ -84,19 +84,19 @@ const mastersStudents: Student[] = [
     name: "Rayadu Vijay Setti",
     program: "Robotics",
     image: undefined,
-    joined: "2024",
+    joined: "2026",
   },
   {
     name: "Sidharth D",
     program: "Artificial Intelligence",
     image: undefined,
-    joined: "2025",
+    joined: "2026",
   },
   {
     name: "Krinsh Dhedhi",
     program: "Artificial Intelligence",
     image: undefined,
-    joined: "2025",
+    joined: "2026",
   },
   {
     name: "Guruvignesh R M",
