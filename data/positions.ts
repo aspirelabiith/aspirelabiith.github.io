@@ -19,9 +19,9 @@ const positions: Position[] = [
     title: "PhD/Research Scholar",
     status: "open",
     description:
-      "Admitted formally through Mechanical and Aerospace Engineering (MAE) department notification at",
-    link: "https://mae.iith.ac.in",
-    linkText: "MAE website",
+      "Admitted formally through Artificial Intelligence (AI) department notification at",
+    link: "https://ai.iith.ac.in",
+    linkText: "AI website",
   },
 ];
 
