@@ -71,47 +71,72 @@ export default function Home() {
         </div>
         <div className="relative min-h-150 lg:min-h-screen overflow-hidden bg-background rounded-3xl p-8 md:p-12">
           <div className="h-full flex flex-col">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Latest News</h2>
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold">Latest News</h2>
+              <Link
+                href="/news"
+                className="text-sm font-semibold text-primary hover:underline"
+              >
+                View all →
+              </Link>
+            </div>
             <div className="overflow-y-auto space-y-6 pr-4 max-h-[75vh]">
-              {newsItems.map((item) => (
-                <div
-                  key={item.id}
-                  className="bg-background/80 backdrop-blur-sm rounded-xl p-6 border border-border/50 hover:border-border transition-all hover:shadow-lg"
-                >
-                  <div className="flex flex-col gap-2">
-                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
-                      <h3 className="text-xl font-semibold flex-1">
-                        {item.link ? (
-                          <Link
-                            href={item.link}
-                            className="hover:text-primary transition-colors"
-                          >
-                            {item.title}
-                          </Link>
-                        ) : (
-                          item.title
-                        )}
-                      </h3>
-                      <time className="text-sm text-muted-foreground whitespace-nowrap">
-                        {new Date(item.date).toLocaleDateString("en-US", {
-                          month: "short",
-                          day: "numeric",
-                          year: "numeric",
-                        })}
-                      </time>
+              {[...newsItems]
+                .sort(
+                  (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+                )
+                .slice(0, 5)
+                .map((item) => (
+                  <div
+                    key={item.id}
+                    className="bg-background/80 backdrop-blur-sm rounded-xl p-6 border border-border/50 hover:border-border transition-all hover:shadow-lg"
+                  >
+                    <div className="flex flex-col gap-2">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
+                        <h3 className="text-xl font-semibold flex-1">
+                          {item.link ? (
+                            <Link
+                              href={item.link}
+                              className="hover:text-primary transition-colors"
+                            >
+                              {item.title}
+                            </Link>
+                          ) : (
+                            item.title
+                          )}
+                        </h3>
+                        <time className="text-sm text-muted-foreground whitespace-nowrap">
+                          {new Date(item.date).toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                            year: "numeric",
+                          })}
+                        </time>
+                      </div>
+                      <p
+                        className="text-muted-foreground leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      />
+                      {item.link && (
+                        <Link
+                          href={item.link}
+                          className="text-sm text-primary font-semibold"
+                        >
+                          Learn more
+                        </Link>
+                      )}
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {item.description}
-                    </p>
-                    <Link
-                      href={item.link ?? "#"}
-                      className="text-sm text-primary font-semibold"
-                    >
-                      Learn more
-                    </Link>
                   </div>
-                </div>
-              ))}
+                ))}
+              <div className="text-center pt-2">
+                <Link
+                  href="/news"
+                  className="text-sm font-semibold text-primary hover:underline"
+                >
+                  View all →
+                </Link>
+              </div>
             </div>
           </div>
         </div>

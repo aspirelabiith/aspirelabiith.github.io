@@ -19,6 +19,7 @@ export const NAV_ITEMS = [
   { title: "Publications", url: "/publications" },
   { title: "Projects", url: "/projects" },
   { title: "Positions", url: "/positions" },
+  { title: "News", url: "/news" },
 ] as const;
 
 export const SOCIAL_LINKS = [

@@ -2,7 +2,7 @@ import { NewsItem } from "../lib/types";
 
 const newsItems: NewsItem[] = [
   {
-    id: "6",
+    id: "2026-08-17-1",
     title: "Junior Project Assistant Position Open",
     date: "2026-08-17",
     description:
@@ -10,7 +10,22 @@ const newsItems: NewsItem[] = [
     link: "https://iith.ac.in/assets/files/careers/staff/Advertisement-for-Junior-Project-Assistant.pdf",
   },
   {
-    id: "1",
+    id: "2026-02-25-1",
+    title: "Best Poster Award at IEEE APSCON 2026",
+    date: "2026-02-25",
+    description:
+      "Congratulations to VVS Viswa Kiran et al. for receiving the Best Poster Award at the 2026 IEEE Applied Sensing Conference (APSCON) for their work on a multi-sensor fusion framework for UAV navigation and inspection in GPS-denied and degraded environments.",
+    link: "/publications#multi-sensor-fusion-uav-gps-denied-2026",
+  },
+  {
+    id: "2026-07-17-1",
+    title: "Congratulations to Our Graduating Students",
+    date: "2026-07-17",
+    description:
+      "Congratulations to Dr Krishnendu Roy for his doctor-hood at the 15th Convocation at IIT Hyderabad. Many congratulations to Sathwik, Saurabh, and Viswa Kiran for their well-earned MTech degrees, and to Shriram for his graduation!",
+  },
+  {
+    id: "2025-12-01-1",
     title: "Internship Opportunities Open",
     date: "2025-12-01",
     description:
@@ -18,36 +33,19 @@ const newsItems: NewsItem[] = [
     link: "/positions",
   },
   {
-    id: "2",
+    id: "2025-11-26-1",
+    title: "New Website and New Name: ASPIRE Lab",
+    date: "2025-11-26",
+    description:
+      'We are excited to launch our new website alongside our new name, ASPIRE Lab (Autonomous Systems, Perception, Intelligence, Robotics, and Exploration). The lab was formerly known as the Robotics and Intelligent Systems Lab (RIS Lab). Our previous website can still be viewed via the <a href="https://web.archive.org/web/20220523230720/https://mae.iith.ac.in/labs/mdl/new/index.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Wayback Machine archive</a>.',
+  },
+  {
+    id: "2025-11-21-1",
     title: "Best Paper Award at ICRM 2025",
     date: "2025-11-21",
     description:
       "Congratulations to N Shyam Sridhar, Aashish Sahu, S Rami Reddy, and R Prasanth Kumar for receiving the Best Paper Award at IEEE International Conference on Robotics and Mechatronics 2025 for their work on collaborative payload transport using a four-quadcopter swarm.",
     link: "/publications#collaborative-payload-transport-2025",
-  },
-  {
-    id: "3",
-    title: "New Publication on Hybrid Biped RL",
-    date: "2025-11-07",
-    description:
-      "Krishnendu Roy and R Prasanth Kumar published their research on prismatic-revolute hybrid biped robot walking in unstructured terrain using reinforcement learning at ICRM 2025.",
-    link: "/publications#hybrid-biped-rl-2025",
-  },
-  {
-    id: "4",
-    title: "Dynamic Standing Stability Paper Published",
-    date: "2025-11-07",
-    description:
-      "Krishnendu Roy and R Prasanth Kumar's paper on dynamic standing stability comparison of revolute-knee and prismatic-knee underactuated biped robots has been published in the International Journal of Dynamics and Control.",
-    link: "/publications#dynamic-standing-stability-2025",
-  },
-  {
-    id: "5",
-    title: "Arm-Leg Hybrid Drone Research Published",
-    date: "2024-12-10",
-    description:
-      "Aashish Sahu and R Prasanth Kumar's work on design and development of an arm-leg hybrid drone for enhanced aerial manipulation and mobility has been published at IEEE ROBIO 2024.",
-    link: "/publications#arm-leg-hybrid-drone-2024",
   },
 ];
 
