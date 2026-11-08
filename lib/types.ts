@@ -52,7 +52,7 @@ export type Project = {
   title: string;
   pi: string;
   duration: string;
-  agency: string;
+  agency?: string;
   coPi?: string;
   investigator?: string;
 };

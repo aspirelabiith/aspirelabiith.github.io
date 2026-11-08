@@ -54,10 +54,12 @@ export default function ProjectsPage() {
                     <span className="font-medium">Duration:</span>{" "}
                     {project.duration}
                   </p>
-                  <p className="wrap-break-word">
-                    <span className="font-medium">Agency:</span>{" "}
-                    {project.agency}
-                  </p>
+                  {project.agency && (
+                    <p className="wrap-break-word">
+                      <span className="font-medium">Agency:</span>{" "}
+                      {project.agency}
+                    </p>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -111,10 +113,12 @@ export default function ProjectsPage() {
                     <span className="font-medium">Duration:</span>{" "}
                     {project.duration}
                   </p>
-                  <p className="wrap-break-word">
-                    <span className="font-medium">Agency:</span>{" "}
-                    {project.agency}
-                  </p>
+                  {project.agency && (
+                    <p className="wrap-break-word">
+                      <span className="font-medium">Agency:</span>{" "}
+                      {project.agency}
+                    </p>
+                  )}
                 </div>
               </CardContent>
             </Card>
