@@ -2,6 +2,43 @@ import { Publication } from "../lib/types";
 
 const publications: Array<Publication> = [
   {
+    id: "vision-language-aerial-manipulation-uav-grasping-2026",
+    authors:
+      "VVS Viswa Kiran, Aashish Sahu, Siddanth Bhogoju, and R. Prasanth Kumar",
+    title:
+      "Vision-Language Guided Aerial Manipulation for Autonomous UAV Grasping",
+    venue:
+      "2026 IEEE 22nd International Conference on Automation Science and Engineering (CASE), 2026",
+    award: "",
+    abstract:
+      "Unmanned aerial vehicles (UAVs) equipped with manipulators enable aerial interaction tasks such as object pickup and transport in environments that are difficult for ground robots to access. However, reliable autonomous aerial grasping remains challenging due to limited onboard perception, dynamic flight conditions, and the need for precise visual alignment. This paper investigates the use of vision-language models (VLMs) to guide UAV-based aerial manipulation through visual reasoning and command generation. We present a system that integrates a downward-facing camera, an onboard flight controller, and an external GPU-based VLM inference module to generate motion commands for object-centered grasping. Two control strategies are explored: (1) direct prediction of low-level motion commands and (2) high-level language-mediated control for iterative target alignment. A dataset of aerial manipulation samples is collected in simulation to fine-tune several open-source VLMs using LoRA-based parameter adaptation. The approach is evaluated in both simulation and real-world experiments using multiple object types and environmental conditions. Experimental results demonstrate that the fine-tuned models achieves the highest grasp success rate and improved centering accuracy compared with other evaluated models, highlighting the potential of VLM-guided perception and control for flexible aerial manipulation with UAV platforms.",
+    doi: "10.1109/case69030.2026.11704162",
+  },
+  {
+    id: "dual-controller-auxiliary-thruster-multirotor-2026",
+    authors: "Aashish Sahu and R. Prasanth Kumar",
+    title:
+      "A Dual-Controller Auxiliary-Thruster Architecture for Wind-Resilient Multirotor Position Stabilization",
+    venue:
+      "2026 IEEE 1st International Conference on Instrumentation (INSTCon), 2026",
+    award: "",
+    abstract:
+      "This paper presents a dual-controller auxiliary-thruster architecture for wind-resilient position stabilization of multirotor unmanned aerial vehicles (UAVs). The proposed system augments a conventional flight-control stack with an independent secondary propulsion subsystem dedicated to lateral disturbance rejection during hover and position-hold operation. In the proposed architecture, the primary controller maintains nominal attitude and altitude regulation, while a secondary controller processes inertial, position, and velocity measurements to estimate horizontal position error and disturbance-induced drift. When the deviation exceeds a predefined threshold, auxiliary thrusters are selectively activated to generate counter-thrust opposite to the disturbance direction; otherwise, the subsystem remains inactive. The approach is evaluated under a high-wind lateral disturbance scenario using three configurations: a baseline without secondary propulsion (NoSPS), a continuously enabled auxiliary-thruster baseline (AlwaysSPS), and the proposed gated dual-mode strategy (GatedDualModeSPS). Results show that the proposed method reduces RMS horizontal error from 1.6411m to 0.8105m, peak horizontal error from 4.3915m to 2.5571m, and settling time from 10.58s to 5.76s relative to NoSPS, while maintaining bounded tilt and stable altitude. Compared with AlwaysSPS, the proposed strategy achieves near-equivalent stabilization with a substantially lower SPS duty ratio of 0.3126.",
+    doi: "10.1109/instcon69741.2026.11691852",
+  },
+  {
+    id: "risk-aware-cooperative-aerial-ground-system-2026",
+    authors: "Shriram Hari, Aashish Sahu, and R. Prasanth Kumar",
+    title:
+      "Risk-Aware Cooperative Aerial-Ground System for Adaptive Autonomous Navigation and Transport",
+    venue:
+      "2026 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT), 2026",
+    award: "",
+    abstract:
+      "Ground robots offer endurance and payload capacity but remain fundamentally constrained by terrain discontinuities such as wide gaps, staircases, narrow corridors, and overhead obstacles, while aerial robots provide superior mobility and global perception yet suffer from limited endurance and payload constraints. Existing heterogeneous aerial-ground systems predominantly employ loosely coupled cooperation in which the aerial agent functions as a sensing extension without enabling physical mission recovery. This paper presents a tightly integrated, risk-aware cooperative aerial-ground framework that enables adaptive mission continuity through synchronized locomotion control and docking-based aerial transport. The proposed system combines a hybrid wheeled-legged quadruped and a heavy-lift hexacopter under a unified mission-level finite state supervisor driven by an aerially estimated terrain risk metric. A normalized traversability map is aggregated into a scalar risk score that autonomously governs transitions among drive, walk, crouch, scout, dock, and transport modes. Upon detecting nontraversable terrain, the aerial agent performs forward scouting to verify a feasible redeployment region, executes geometrically constrained passive docking, and transports the quadruped across the hazard before controlled release and resumption of ground navigation. The framework is validated in a physics-consistent MuJoCo simulation environment incorporating full rigid-body and contact dynamics across a structured multi-segment obstacle course. Across repeated trials, the cooperative system achieves success rates exceeding 90% in complex terrain segments compared to 58.3% for a standalone quadruped baseline, demonstrating that risk-driven physical cooperation substantially expands the operational envelope of ground robots and provides measurable improvements in mission resilience.",
+    doi: "10.1109/conecct68978.2026.11700627",
+  },
+  {
     id: "go-pcm-thermal-management-bldc-2026",
     authors: "Aashish Sahu, R. Prasanth Kumar, and Lalhmingsanga Hauchhum",
     title:
